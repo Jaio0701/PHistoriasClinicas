@@ -1,0 +1,77 @@
+header 
+{
+    font-size:500%;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+}
+
+nav
+{
+    position: relative;
+    text-align: center;
+    background-color: cornflowerblue;
+    font-size: 0px;
+}
+
+.navB
+{
+    padding: 15px 30px;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border: none;
+    position: relative;
+    align-items: baseline;
+    font-family:sans-serif;
+    word-spacing: 0px;
+    cursor: pointer;
+    
+    transition: 0.5s;
+}
+
+#srch{
+    background-color: lightskyblue;
+}
+
+
+.navB:hover{
+    padding: 15px 35px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    transition: 0.5s;
+}
+
+.container 
+{
+    
+    text-align: center;
+    position: relative;
+    top: 10px;
+    
+}
+
+.container table
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.container .registro {
+    display: none;
+}
+
+.container .registro .inputs{
+    padding: 15px;
+}
+
+span{
+    margin-left: 20px;
+}
