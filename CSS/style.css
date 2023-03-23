@@ -1,0 +1,112 @@
+header 
+{
+    font-size:500%;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+}
+
+nav
+{
+    position: relative;
+    text-align: center;
+    background-color: cornflowerblue;
+    font-size: 0px;
+  
+}
+
+.navB
+{
+    padding: 15px 30px;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border: none;
+    position: relative;
+    align-items: baseline;
+    font-family:sans-serif;
+    word-spacing: 0px;
+    cursor: pointer;
+    
+    transition: 0.5s;
+}
+
+#srch{
+    background-color: lightskyblue;
+}
+
+
+.navB:hover{
+    padding: 15px 35px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    transition: 0.5s;
+}
+
+.container 
+{
+    
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    background-color: lightcyan;
+    
+}
+
+.container table
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+.container th,td{
+  width: 100;
+}
+
+.container .registro {
+    display: none;
+}
+
+.container .registro .inputs{
+    padding: 15px;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 15px 30px;
+    
+    color: white;
+    font-size: big;
+}
+
+span{
+    margin-left: 20px;
+}
+
+fieldset{
+  border: 1px solid black;
+  background-color: whitesmoke;
+}
+
+legend{
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#confirm{
+  padding: 15px 20px;
+  background-color: darkcyan;
+  border-radius: 15px;
+  color: white;
+  border: none;
+}
+

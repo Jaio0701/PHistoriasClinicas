@@ -1,0 +1,14 @@
+
+select {
+    padding: 7px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: lightblue;
+  }
+
+option
+{
+    border: none;
+    border-radius: 4px;
+    background-color: lightblue;
+}
