@@ -3,6 +3,15 @@ var modal = document.getElementById("myModal");
 var buscar = document.getElementById("buscar");
 var registro = document.getElementById("registro");
 var buscarA = true;
+var control = document.getElementById("control");;
+var home = document.getElementById("home");
+var visiBtn = document.getElementById("visita");
+var retBtn = document.getElementById("return");
+var vConfBtn = document.getElementById("visiConfirm");
+var regBtn = document.getElementById("registrar");
+var navB = document.getElementById("navD");
+
+
 
 
 // Get the button that opens the modal
@@ -30,13 +39,37 @@ btn2.onclick = function() {
     btn.style.backgroundColor = "cornflowerblue";
     buscar.style.display = "none";
     btn2.style.backgroundColor = "lightskyblue";
-    registro.style.display = "block";
+    registro.style.display = "flex";
     buscarA=false;
   }
 
 
   //modal.style.display = "block";
 }
+
+visiBtn.onclick = function(){
+  home.style.display = "none";
+  control.style.display = "flex";
+  //navB.style.display = "none";
+}
+
+vConfBtn.onclick = function(){
+    home.style.display = "block";
+    control.style.display = "none";
+    //navB.style.display = "block";
+  }
+
+  retBtn.onclick = function(){
+    home.style.display = "block";
+    control.style.display = "none";
+    //navB.style.display = "block";
+  }
+
+  regBtn.onclick = function(){
+    home.style.display = "none";
+    control.style.display = "flex";
+    //navB.style.display = "none";
+  }
 
 /*btn.onmouseover = function(){
   this.style.backgroundColor = "lightskyblue";
@@ -54,13 +87,32 @@ btn2.onmouseout = function(){
 
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+
+
+function calcular(){
+  try{           
+        var a = parseFloat(document.getElementById("hdl").value) ;
+        var b = parseFloat(document.getElementById("ldl").value) ;
+        
+        document.getElementById("total").value = a + b; 
+        } catch(e){}
+}
+
+
+function suma(){
+  try{           
+          var p = parseFloat(document.getElementById("peso").value) ;
+          var e = parseFloat(document.getElementById("estatura").value) ;
+        
+          document.getElementById("imc").value = p/(e*e); 
+        } catch(e){}
 }

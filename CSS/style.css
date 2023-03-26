@@ -67,16 +67,20 @@ nav
     
 }
 .container th,td{
-  width: 100;
+    width: 100;
 }
 
 .container .registro {
     display: none;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .container .registro .inputs{
     padding: 15px;
 }
+
 
 footer{
     position: relative;
@@ -94,23 +98,78 @@ span{
 
 
 form{
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
+
+
 fieldset{
-  border: 1px solid black;
-  background-color: whitesmoke;
-  border-radius: 15px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 15px;
 }
 
 
-#confirm{
-  padding: 15px 20px;
-  background-color: darkcyan;
-  border-radius: 15px;
-  color: white;
-  border: none;
+fieldset{
+    width: 23.33333%;
+}
+
+.control fieldset{
+    width: 23.33333%;
+    padding: 30px;
+    
+}
+
+.container .control {
+    display: none;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    display: none;
+}
+
+h1, .boton{
+    width: 100%;
+}
+
+#antecedentes h3, h4{
+    margin-block-start: 5px;
+}
+
+.confirm{
+    padding: 15px 20px;
+    background-color: darkcyan;
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+
+input[type=number]{
+    width: 40px;
+}
+
+input[type=text]{
+    width: 60px;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+select {
+    padding: 7px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: lightblue;
+}
+
+option
+{
+    border: none;
+    border-radius: 4px;
+    background-color: lightblue;
 }
 
