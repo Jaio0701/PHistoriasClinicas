@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Historias clinicas</title>
   <link rel="stylesheet" href="CSS/modal.css">
   <link rel="stylesheet" href="CSS/style.css">
 
@@ -22,11 +22,8 @@
     </div>
   </nav>
 
-
-
   <div class="container">
     <div class="home" id="home">
-
       <div class="buscar" id="buscar">
         <table>
           <h1>Buscar<br></h1>
@@ -48,166 +45,165 @@
         </table>
         <button id="visita" class="confirm">Visita</button>
       </div>
-
       <form class="registro" id="registro">
         <h1>Registro</h1>
+            <fieldset id="identificacion">
+              <legend><h2>Identificacion</h2></legend>
+              <span>
+                <label for="expediente">Expediente:</label> 
+                <input type="text" name="expediente">
+              </span>
+              <br>
+              <span>
+                <label for="Nombres">Nombre:</label> 
+                <input type="text" name="nombre">
+              </span>
+              <span>
+                <label for="apellidoP">Apellido paterno</label> 
+                <input type="text" name="apellidoP">
+              </span>
+     
+              
+              <span>
+                <label for="apellidoM">Apellido materno</label> 
+                <input type="text" name="apellidoM">
+              </span>
   
-        <fieldset id="identificacion">
-          <legend><h2>Identificacion</h2></legend>
-          <span>
-            Expediente:
-            <input type="text" name="expediente">
-          </span>
-          <span>
-            Seguro social
-            <select id="country" name="country">
-              <option value="activo">Activo</option>
-              <option value="Inactivo">Inactivo</option>
-            </select>
-          </span>
-          <span>
-            Nombre:
-            <input type="text" name="nombre">
-          </span>
-          <span>
-            Fecha de nacimiento:
-            <input type="number" name="dia" placeholder="Día" min="1" max="31">
-            <input type="number" name="mes" placeholder="Mes" min="1" max="12">
-            <input type="number" name="anio" placeholder="Año" min="1900" max="2100"><br><br>
-          </span>
-          <span>
-            Entidad de nacimiento:
-            <input type="text" name="entidad" maxlength="2">
-          </span>
-          <span>
-            CURP:
-            <input type="text" name="curp" maxlength="18">
-          </span>
-          <span>
-            Edad:
-            <input type="number" name="edad" min="1" max="200">
-          </span>
-          <span>
-            Sexo:
-            <select id="country" name="Sexo">
-              <option value="Masculino">Masculino</option>
-              <option value="Femenino">Femenino</option>
-            </select>
-          </span>
-  
-          <span>
-            Talla:
-            <input type="text" name="talla"><br><br>
-          </span>
-          <span>
-            Pertenece a algún pueblo indígena:
-            <select name="pueblo">
-              <option value="si">Sí</option>
-              <option value="no">No</option>
-            </select>
-          </span>
-          <span>
-            Domicilio 1:
-            <input type="text" name="domicilio1">
-          </span>
-          <span>
-            Domicilio 2:
-            <input type="text" name="domicilio2">
-          </span>
-          <span>
-            Afiliación SPSS:
-            <input type="text" name="aSPSS" maxlength="13">
-          </span>
-        </fieldset>
-  
-        <fieldset id="antecedentes">
-          <legend><h2>Antecedentes</h2></legend>
-          <h3>Familiares:</h3>
-          <span>
-            Enf. cardiovascular:
-            <input type="checkbox" name="enf_cardiovascular">
-            HTA:
-            <input type="checkbox" name="hta">
-            Diabetes:
-            <input type="checkbox" name="diabetes">
-            Enf. cereb. vascular:
-            <input type="checkbox" name="enf_cereb_vascular">
-            Dislipidemias:</label>
-            <input type="checkbox" name="dislipidemias"><br><br>
-          </span>
-          <h4>En:</h4>
-          <span>
-            Abuelos:
-            <input type="checkbox" name="abuelos" id="abuelos">
-            Padres:
-            <input type="checkbox" name="padres" id="padres">
-            Tíos:
-            <input type="checkbox" name="tios" id="tios">
-            Hermanos:
-            <input type="checkbox" name="hermanos" id="hermanos">
-            Otros:
-            <input type="checkbox" name="otros" id="otros"><br><br>
-          </span>
-          <h3>Personales:</h3> 
-          <span>
-            Enf. cardiovascular:
-            <input type="checkbox" name="enf_cardiovascular_personal">
-            Diabetes:
-            <input type="checkbox" name="diabetes_personal">
-            HTA:
-            <input type="checkbox" name="hta_personal">
-            Tabaquismo:
-            <input type="checkbox" name="tabaquismo">
-            Alcoholismo:
-            <input type="checkbox" name="alcoholismo">
-            Dislipidemias:
-            <input type="checkbox" name="dislipidemias_personal">
-            Post menopausia:
-            <input type="checkbox" name="post_menopausia">
-            Terapia de reemplazo hormonal:
-            <input type="checkbox" name="terapia_reemplazo_hormonal"><br><br>
-          </span>
-        </fieldset>
-        
-        <fieldset id="diagnostico">
-          <legend> <h2>Datos del diagnostico</h2> </legend>
-          <span>
-            Ingreso:
-            <input type="checkbox" name="ingreso">
-            Reingreso:
-            <input type="checkbox" name="reingreso"><br><br>
-            1. D.M.:
-            <input type="text" name="dm" maxlength="6">
-            Tipo:
-            <input type="text" name="dmT">
-            2. HTA:
-            <input type="text" name="htaD" maxlength="6">
-            3. Obesidad:
-            <input type="text" name="obesidadD" maxlength="6"><br><br>
-            4. Dislipidemias:
-            <input type="text" name="dislipidemiasD" maxlength="6">
-            5. Síndrome metabólico:
-            <input type="text" name="sindromeMetabolico" maxlength="6">
-            6. Sobrepeso:
-            <input type="text" name="sobrepesoD" maxlength="6"><br><br>
-            Detección se le realizó por:<br>
-            Pesquisa:
-            <input type="checkbox" name="pesquisa">
-            Por sintomatología:
-            <input type="checkbox" name="pSintomatologia">
-            Tratamiento previo:
-            <select name="tratamiento">
-              <option value="si">Sí</option>
-              <option value="no">No</option>
-            </select><br>
-          </span>
-        </fieldset>
-        <div class="boton">
-          <button id="registrar" type="button" class="confirm">Confirmar</button>
-        </div>
-        
-      </form>
+              <span>
+                <label for="fechaN">Fecha de nacimiento:</label> 
+                <input type="date" name="fechaN" id="fechaN">
+              </span>
+              <span>
+                <label for="entidadN">Entidad de nacimiento:</label> 
+                <input type="text" name="entidadN" maxlength="2">
+              </span>
+              <span>
+                <label for="curp">CURP:</label> 
+                <input type="text" name="curp" maxlength="18">
+              </span>
+              <span>
+                <label for="edad">Edad:</label> 
+                <input type="number" name="edad" min="1" max="200">
+              </span>
+              <span>
+                <label for="sexo">Sexo:</label> 
+                <select id="country" name="Sexo">
+                  <option value="Masculino">Masculino</option>
+                  <option value="Femenino">Femenino</option>
+                </select>
+              </span>
 
+              
+              <span>
+                <label for="talla">Talla:</label> 
+                <input type="text" name="talla"><br><br>
+              </span>
+              <span>
+                <label for="pueblo">Indígena:</label> 
+                <input type="checkbox" name="pueblo" id="pueblo">
+              </span>
+              <span>
+                <label for="domicilio1">Domicilio 1:</label> 
+                <input type="text" name="domicilio1">
+              </span>
+              <span>
+                <label for="domicilio2">Domicilio 2:</label> 
+                <input type="text" name="domicilio2">
+              </span>
+              <span>
+                <label for="aSPSS">Afiliación SPSS:</label> 
+                <input type="text" name="aSPSS" maxlength="13">
+              </span>
+            </fieldset>
+          
+            <fieldset id="antecedentes">
+              <legend><h2>Antecedentes</h2></legend>
+              <h3>Familiares:</h3>
+              <span>
+                Enf. cardiovascular:
+                <input type="checkbox" name="enf_cardiovascular">
+                HTA:
+                <input type="checkbox" name="hta">
+                Diabetes:
+                <input type="checkbox" name="diabetes">
+                Enf. cereb. vascular:
+                <input type="checkbox" name="enf_cereb_vascular">
+                Dislipidemias:</label>
+                <input type="checkbox" name="dislipidemias"><br><br>
+              </span>
+              <h4>En:</h4>
+              <span>
+                Abuelos:
+                <input type="checkbox" name="abuelos" id="abuelos">
+                Padres:
+                <input type="checkbox" name="padres" id="padres">
+                Tíos:
+                <input type="checkbox" name="tios" id="tios">
+                Hermanos:
+                <input type="checkbox" name="hermanos" id="hermanos">
+                Otros:
+                <input type="checkbox" name="otros" id="otros"><br><br>
+              </span>
+              <h3>Personales:</h3> 
+              <span>
+                Enf. cardiovascular:
+                <input type="checkbox" name="enf_cardiovascular_personal">
+                Diabetes:
+                <input type="checkbox" name="diabetes_personal">
+                HTA:
+                <input type="checkbox" name="hta_personal">
+                Tabaquismo:
+                <input type="checkbox" name="tabaquismo">
+                Alcoholismo:
+                <input type="checkbox" name="alcoholismo">
+                Dislipidemias:
+                <input type="checkbox" name="dislipidemias_personal">
+                Post menopausia:
+                <input type="checkbox" name="post_menopausia">
+                Terapia de reemplazo hormonal:
+                <input type="checkbox" name="terapia_reemplazo_hormonal"><br><br>
+              </span>
+            </fieldset>
+            
+            <fieldset id="diagnostico">
+              <legend> <h2>Datos del diagnostico</h2> </legend>
+              <span>
+                Ingreso:
+                <input type="checkbox" name="ingreso">
+                Reingreso:
+                <input type="checkbox" name="reingreso"><br><br>
+                1. D.M.:
+                <input type="text" name="dm" maxlength="6">
+                Tipo:
+                <input type="text" name="dmT">
+                2. HTA:
+                <input type="text" name="htaD" maxlength="6">
+                3. Obesidad:
+                <input type="text" name="obesidadD" maxlength="6"><br><br>
+                4. Dislipidemias:
+                <input type="text" name="dislipidemiasD" maxlength="6">
+                5. Síndrome metabólico:
+                <input type="text" name="sindromeMetabolico" maxlength="6">
+                6. Sobrepeso:
+                <input type="text" name="sobrepesoD" maxlength="6"><br><br>
+                Detección se le realizó por:<br>
+                Pesquisa:
+                <input type="checkbox" name="pesquisa">
+                Por sintomatología:
+                <input type="checkbox" name="pSintomatologia">
+                Tratamiento previo:
+                <select name="tratamiento">
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select><br>
+              </span>
+            </fieldset>
+          
+          <div class="boton">
+            <button id="cancel" type="button" class="confirm">Cancelar</button>
+            <button id="confirm" type="button" class="confirm">Confirmar</button>
+          </div>     
+      </form>
     </div>
 
     <form class="control" id="control">

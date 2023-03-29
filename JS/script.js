@@ -3,7 +3,7 @@ var modal = document.getElementById("myModal");
 var buscar = document.getElementById("buscar");
 var registro = document.getElementById("registro");
 var buscarA = true;
-var control = document.getElementById("control");;
+var control = document.getElementById("control");
 var home = document.getElementById("home");
 var visiBtn = document.getElementById("visita");
 var retBtn = document.getElementById("return");
@@ -39,7 +39,7 @@ btn2.onclick = function() {
     btn.style.backgroundColor = "cornflowerblue";
     buscar.style.display = "none";
     btn2.style.backgroundColor = "lightskyblue";
-    registro.style.display = "flex";
+    registro.style.display = "inline-block";
     buscarA=false;
   }
 
@@ -65,11 +65,6 @@ vConfBtn.onclick = function(){
     //navB.style.display = "block";
   }
 
-  regBtn.onclick = function(){
-    home.style.display = "none";
-    control.style.display = "flex";
-    //navB.style.display = "none";
-  }
 
 /*btn.onmouseover = function(){
   this.style.backgroundColor = "lightskyblue";
@@ -115,4 +110,41 @@ function suma(){
         
           document.getElementById("imc").value = p/(e*e); 
         } catch(e){}
+}
+
+
+var antP = document.getElementById("antecedentes");
+var idP = document.getElementById("identificacion");
+var diagP = document.getElementById("diagnostico");
+var sigBtn  = document.getElementById("confirm");
+var canBtn  = document.getElementById("cancel");
+var antA = false;
+var diagA = false;
+
+sigBtn.onclick = function() {
+    if(antA){
+        antP.style.display = "none";
+        diagP.style.display = "inline-block";
+        antA=false;
+        diagA=true;        
+    }
+    else if(!diagA){
+        idP.style.display = "none";
+        antP.style.display = "inline-block";
+        antA=true;  
+    }
+}
+
+canBtn.onclick = function() {
+    if(antA){
+        antP.style.display = "none";
+        idP.style.display = "inline-block";
+        antA=false;       
+    }
+    else if(diagA){
+        diagP.style.display = "none";
+        antP.style.display = "inline-block";
+        diagA = false;
+        antA=true;
+    }
 }
