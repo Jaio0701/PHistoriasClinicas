@@ -4,10 +4,10 @@ header{
     text-transform: uppercase;
     font-weight: 200;
     text-align: center;
+    background-color: azure;
 }
 
 .container{
-    background-color: lightcyan;
     text-align: center;
     padding: 10px;
 }
@@ -20,6 +20,8 @@ fieldset{
     border: 1px solid black;
     background-color: whitesmoke;
     border-radius: 15px;
+    height: 400px;
+    
 }
 /*********************************/
 
@@ -31,14 +33,12 @@ fieldset{
 
 .registro fieldset{
     width: 100%;
-    height: 400px;
 }
 /************************/
 
 /*Formato de control*/
 .control fieldset{
     width: 23.33333%;
-    padding: 30px;
 }
 
 .container .control {
@@ -67,6 +67,13 @@ h1, .boton{
     color: white;
     border: none;
 }
+.confirm:hover{
+    background-color: lightblue;
+}
+.confirm:active{
+    background-color: lightskyblue;
+}
+/*******************/
 
 /*Formato de inputs*/
 input[type=number]{
@@ -160,13 +167,22 @@ nav{
 }
 /*****************************/
 
+body{
+    margin:0px;
+    background-color: lightcyan;
+}
 /*Formato del footer*/
 footer{
-    position: relative;
+    position: absolute;
     text-align: center;
     background-color: cornflowerblue;
     padding: 15px 30px;
     color: white;
     font-size: big;
+    width: 100%;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 /********************************/
