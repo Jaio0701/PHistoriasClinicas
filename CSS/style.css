@@ -76,28 +76,28 @@ h1, .boton{
 /*******************/
 
 /*Formato de inputs*/
-input[type=number]{
+.container input[type=number]{
     width: 40px;
 }
 
-input[type=text]{
+.container input[type=text]{
     width: 60px;
 }
 
-textarea {
+.container textarea {
     resize: none;
     border: none;
     border-radius: 5px;
 }
 
-select {
+.container select {
     padding: 7px 5px;
     border: none;
     border-radius: 4px;
     background-color: lightblue;
 }
 
-option{
+.container option{
     border: none;
     border-radius: 4px;
     background-color: lightblue;
@@ -109,6 +109,9 @@ option{
 }
 
 /*PANELES OCULTOS*/
+#paginaPrincipal{
+    display: none;
+}
 #antecedentes{
     display: none;
 }
@@ -143,6 +146,10 @@ nav{
     background-color: cornflowerblue;
     font-size: 0px;
   
+}
+
+nav #srch{
+    background-color: lightskyblue;
 }
 
 .navB{

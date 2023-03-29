@@ -148,3 +148,12 @@ canBtn.onclick = function() {
         antA=true;
     }
 }
+
+var princP  = document.getElementById("paginaPrincipal");
+var loginP = document.getElementById("login");
+var signInBtn = document.getElementById("iniciaSesion");
+
+signInBtn.onclick = () => {
+  loginP.style.display = "none";
+  princP.style.display = "block";
+}
