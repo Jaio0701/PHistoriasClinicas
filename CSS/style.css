@@ -196,6 +196,7 @@ footer{
 .dropdown {
 	position: relative;
 	display: inline-block;
+    margin-right: 20px;
 }
 
 .dropdown-content {
@@ -204,7 +205,17 @@ footer{
 	z-index: 1;
     pointer-events: none;
 }
+.dropdown-content label {
+	display: flex; /* Convertir a un contenedor flex */
+	align-items: center; /* Centrar verticalmente */
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
+.dropdown-content input[type="checkbox"] {
+	margin-right: 5px;
+}
 .dropdown:hover .dropdown-content {
 	display: block;
 	pointer-events: auto;
