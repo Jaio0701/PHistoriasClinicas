@@ -4,7 +4,7 @@ from config import mysql
 from flask import jsonify
 from flask import flash, request
 
-@app.route('/create', methods=['POST'])
+@app.route('/createPaciente', methods=['POST'])
 def create_paciente():
     try:        
         _json = request.json
@@ -33,8 +33,35 @@ def create_paciente():
         print(e)
     finally:
         cursor.close() 
+        conn.close()  
+        
+@app.route('/createUser', methods=['POST'])
+def create_user():
+    try:        
+        _json = request.json
+        _user = _json['user']
+        _contrasenia = _json['contrasenia']
+        
+        if _user and _contrasenia and request.method == 'POST':
+            conn = mysql.connect()
+            cursor = conn.cursor(pymysql.cursors.DictCursor)		
+            sqlQuery = "INSERT INTO usuario(usuario, password) VALUES(%s, %s)"
+            bindData = (_user, _contrasenia)            
+            cursor.execute(sqlQuery, bindData)
+            #cursor.execute("INSERT INTO paciente(entNacimiento, curp, sexo, talla, domicilio, telefono, spss, fechaNac) VALUES(2, 2, 2, 2, 2, 2, 2, 2023-1-1)")
+            conn.commit()
+            respone = jsonify('Employee added successfully!')
+            respone.status_code = 200
+            return respone
+        else:
+            return showMessage()
+    except Exception as e:
+        print(e)
+    finally:
+        cursor.close() 
         conn.close()          
-     
+    
+
 
 
 @app.route('/paciente')
