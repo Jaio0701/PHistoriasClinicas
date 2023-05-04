@@ -16,13 +16,19 @@ span{
     margin-left: 20px;
 }
 
+h3,  #date{
+    text-align: center;
+}
+
 fieldset{
     border: 1px solid black;
     background-color: whitesmoke;
     border-radius: 15px;
     height: 400px;
-    
+    display: flex;
+    justify-content: center;
 }
+
 /*********************************/
 
 
@@ -33,12 +39,21 @@ fieldset{
 
 .registro fieldset{
     width: 100%;
+
+}
+.content{
+    text-align: left;
+    
 }
 /************************/
 
 /*Formato de control*/
+#observaciones h3{
+    width: 100%;
+    margin-block-end: 0px
+}
 .control fieldset{
-    width: 23.33333%;
+    flex-wrap: wrap;
 }
 
 .container .control {
@@ -48,6 +63,11 @@ fieldset{
     justify-content: center;
     display: none;
 }
+
+.control{
+    text-align: center;
+}
+
 /****************************/
 
 /*Seccion de titulo y botones*/
@@ -84,10 +104,13 @@ h1, .boton{
     width: 60px;
 }
 
+
+
 .container textarea {
     resize: none;
     border: none;
     border-radius: 5px;
+    width: 100%;
 }
 
 .container select {
@@ -104,9 +127,7 @@ h1, .boton{
 }
 /***********************/
 
-#identificacion{
-    display: inline-block;
-}
+
 
 /*PANELES OCULTOS*/
 #paginaPrincipal{
@@ -114,6 +135,8 @@ h1, .boton{
 }
 #antecedentes{
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 #diagnostico{
     display: none;    

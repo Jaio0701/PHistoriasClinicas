@@ -51,15 +51,15 @@
         <h1>Registro</h1>
         <fieldset id="identificacion">
           <legend><h2>Identificacion</h2></legend>
-          <div style="text-align: left;">
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+          <div class = "content">
+            
             <span>
               Expediente:
               &emsp;
               <input type="text" name="expediente">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Seguro social
               &nbsp;
@@ -69,42 +69,40 @@
               </select>
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Nombre:
               &emsp; &emsp;
               <input type="text" name="nombre">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Fecha de nacimiento:
               &ensp;
-              <input type="number" name="dia" placeholder="Día" min="1" max="31">
-              <input type="number" name="mes" placeholder="Mes" min="1" max="12">
-              <input type="number" name="anio" placeholder="Año" min="1900" max="2100">
+              <input type="date" name="birth" id="birth">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Entidad de nacimiento:
               <input type="text" name="entidad" maxlength="2">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               CURP:
               <input type="text" name="curp" maxlength="18">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
+             
             <span>
               Edad:
               &nbsp;
               <input type="number" name="edad" min="1" max="200">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Sexo:
               &nbsp;
@@ -114,14 +112,14 @@
               </select>
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Talla:
               &nbsp;
               <input type="text" name="talla">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Pertenece a algún pueblo indígena:
               <select name="pueblo">
@@ -130,21 +128,21 @@
               </select>
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Domicilio 1:
               &emsp; &nbsp;
               <input type="text" name="domicilio1">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Domicilio 2:
               &emsp; &nbsp;
               <input type="text" name="domicilio2">
             </span>
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Afiliación SPSS:
               <input type="text" name="aSPSS" maxlength="13">
@@ -156,8 +154,8 @@
         <fieldset id="antecedentes">
           <legend><h2>Antecedentes</h2></legend>
           <h3>Familiares:</h3>
-          <div style="text-align: left;">
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+          <div class = "content">
+            
             <span>
               Enf. cardiovascular:
               <input type="checkbox" name="enf_cardiovascular">
@@ -166,7 +164,7 @@
             HTA:
             <input type="checkbox" name="hta">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Diabetes:
               <input type="checkbox" name="diabetes">
@@ -175,15 +173,15 @@
             Enf. cereb. vascular:
             <input type="checkbox" name="enf_cereb_vascular">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             <span>
               Dislipidemias:</label>
               <input type="checkbox" name="dislipidemias">
             </span>
           </div>
             <h4>En:</h4>
-            <div style="text-align: left;">
-              &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            <div class = "content">
+              
               <span>
                 Abuelos:
                 <input type="checkbox" name="abuelos" id="abuelos">
@@ -192,7 +190,7 @@
               Padres:
               <input type="checkbox" name="padres" id="padres">
               <br>
-              &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+              
               <span>
                 Tíos:
                 <input type="checkbox" name="tios" id="tios">
@@ -201,15 +199,15 @@
               Hermanos:
               <input type="checkbox" name="hermanos" id="hermanos">         
               <br>  
-              &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+              
               <span>
                 Otros:
                 <input type="checkbox" name="otros" id="otros">
               </span>   
             </div>
             <h3>Personales:</h3> 
-            <div style="text-align: left;">
-              &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            <div class = "content">
+              
               <span>
                 Enf. cardiovascular:
                 <input type="checkbox" name="enf_cardiovascular_personal">
@@ -221,7 +219,7 @@
               HTA:
               <input type="checkbox" name="hta_personal">
               <br>
-              &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+              
               <span>
                 Tabaquismo:
                 <input type="checkbox" name="tabaquismo">
@@ -233,7 +231,7 @@
               Dislipidemias:
               <input type="checkbox" name="dislipidemias_personal">
               <br>
-              &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+              
               <span>
                 Post menopausia:
                 <input type="checkbox" name="post_menopausia">
@@ -246,58 +244,58 @@
         <!--Seccion de diagnostico-->
         <fieldset id="diagnostico">
           <legend> <h2>Datos del diagnostico</h2> </legend>
-          <div style="text-align: left;">
+          <div class = "content">
             &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; &emsp;
             Ingreso:
             &ensp; &nbsp;
             <input type="checkbox" name="ingreso">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             Reingreso:
             <input type="checkbox" name="reingreso">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             1. D.M.:
             <input type="text" name="dm" maxlength="6">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             Tipo:
             &emsp;
             <input type="text" name="dmT">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             2. HTA:
             <input type="text" name="htaD" maxlength="6">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             3. Obesidad:
             &emsp; &nbsp;
             <input type="text" name="obesidadD" maxlength="6">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             4. Dislipidemias:
             <input type="text" name="dislipidemiasD" maxlength="6">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             5. Síndrome metabólico:
             <input type="text" name="sindromeMetabolico" maxlength="6">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             6. Sobrepeso:
             <input type="text" name="sobrepesoD" maxlength="6">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             Detección se le realizó por:
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             Pesquisa:
             <input type="checkbox" name="pesquisa">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             Por sintomatología:
             <input type="checkbox" name="pSintomatologia">
             <br>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            
             Tratamiento previo:
             <select name="tratamiento">
               <option value="si">Sí</option>
@@ -317,7 +315,7 @@
     <form class="control" id="control">
       <h1>Control</h1>
       <!--Lado izquierdo-->
-      <fieldset style="text-align: left;">
+      <fieldset class = "content">
         <br>
         <span>
           <label for="fecha">Fecha:</label>
@@ -402,7 +400,7 @@
         </span>
       </fieldset>
       <!--Centro-->
-      <fieldset style="text-align: left;">
+      <fieldset class = "content">
         <div id="colesterol">
           <h3>Colesterol</h3>
           <span>
@@ -453,7 +451,7 @@
         
       </fieldset>
       <!--Lado derecho-->
-      <fieldset style="text-align: left;">
+      <fieldset class = "content">
         <h3>Observaciones</h3>
         <textarea name="notas" id="" cols="40" rows="13"></textarea>
       </fieldset>

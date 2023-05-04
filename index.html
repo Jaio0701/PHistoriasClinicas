@@ -52,8 +52,7 @@
 
 
             </select> 
-         
-                (Nombre/CURP):
+            (Nombre/CURP):
             <input type="text" id="input-search" placeholder="Filtrar por Nombre/CURP" style="width: 200px;"><br><br>           
                <p></p>
               <th>Pacientes</th>      
@@ -98,158 +97,266 @@
 		<p></p>
           <button id="visita" class="confirm">Visita</button>
         </div>
+
         <form class="registro" id="registro">
           <h1>Registro</h1>
-    
           <fieldset id="identificacion">
             <legend><h2>Identificacion</h2></legend>
-            <span>
-              Expediente:
-              <input type="text" name="expediente">
-            </span>
-            <span>
-              Seguro social
-              <select id="country" name="country">
-                <option value="activo">Activo</option>
-                <option value="Inactivo">Inactivo</option>
-              </select>
-            </span>
-            <span>
-              Nombre:
-              <input type="text" name="nombre">
-            </span>
-            <span>
-              Fecha de nacimiento:
-              <input type="number" name="dia" placeholder="Día" min="1" max="31">
-              <input type="number" name="mes" placeholder="Mes" min="1" max="12">
-              <input type="number" name="anio" placeholder="Año" min="1900" max="2100"><br><br>
-            </span>
-            <span>
-              Entidad de nacimiento:
-              <input type="text" name="entidad" maxlength="2">
-            </span>
-            <span>
-              CURP:
-              <input type="text" name="curp" maxlength="18">
-            </span>
-            <span>
-              Edad:
-              <input type="number" name="edad" min="1" max="200">
-            </span>
-            <span>
-              Sexo:
-              <select id="country" name="Sexo">
-                <option value="Masculino">Masculino</option>
-                <option value="Femenino">Femenino</option>
-              </select>
-            </span>
-    
-            <span>
-              Talla:
-              <input type="text" name="talla"><br><br>
-            </span>
-            <span>
-              Pertenece a algún pueblo indígena:
-              <select name="pueblo">
-                <option value="si">Sí</option>
-                <option value="no">No</option>
-              </select>
-            </span>
-            <span>
-              Domicilio 1:
-              <input type="text" name="domicilio1">
-            </span>
-            <span>
-              Domicilio 2:
-              <input type="text" name="domicilio2">
-            </span>
-            <span>
-              Afiliación SPSS:
-              <input type="text" name="aSPSS" maxlength="13">
-            </span>
+            <div class = "content">
+              
+              <span>
+                Expediente:
+                &emsp;
+                <input type="text" name="expediente">
+              </span>
+              <br>
+              
+              <span>
+                Seguro social
+                &nbsp;
+                <select id="country" name="country">
+                  <option value="activo">Activo</option>
+                  <option value="Inactivo">Inactivo</option>
+                </select>
+              </span>
+              <br>
+              
+              <span>
+                Nombre:
+                &emsp; &emsp;
+                <input type="text" name="nombre">
+              </span>
+              <br>
+              
+              <span>
+                Fecha de nacimiento:
+                &ensp;
+                <input type="date" name="birth" id="birth">
+              </span>
+              <br>
+              
+              <span>
+                Entidad de nacimiento:
+                <input type="text" name="entidad" maxlength="2">
+              </span>
+              <br>
+              
+              <span>
+                CURP:
+                <input type="text" name="curp" maxlength="18">
+              </span>
+              <br>
+               
+              <span>
+                Edad:
+                &nbsp;
+                <input type="number" name="edad" min="1" max="200">
+              </span>
+              
+            </div>
+            <div class="content">
+
+              
+              
+              <span>
+                Sexo:
+                &nbsp;
+                <select id="country" name="Sexo">
+                  <option value="Masculino">Masculino</option>
+                  <option value="Femenino">Femenino</option>
+                </select>
+              </span>
+              <br>
+              
+              <span>
+                Talla:
+                &nbsp;
+                <input type="text" name="talla">
+              </span>
+              <br>
+              
+              <span>
+                Pertenece a algún pueblo indígena:
+                <select name="pueblo">
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+              </span>
+              <br>
+              
+              <span>
+                Domicilio 1:
+                &emsp; &nbsp;
+                <input type="text" name="domicilio1">
+              </span>
+              <br>
+              
+              <span>
+                Domicilio 2:
+                &emsp; &nbsp;
+                <input type="text" name="domicilio2">
+              </span>
+              <br>
+              
+              <span>
+                Afiliación SPSS:
+                <input type="text" name="aSPSS" maxlength="13">
+              </span>
+              <br>
+            </div>
           </fieldset>
-    
+          <!--Seccion de antecedentes-->
           <fieldset id="antecedentes">
             <legend><h2>Antecedentes</h2></legend>
             <h3>Familiares:</h3>
-            <span>
-              Enf. cardiovascular:
-              <input type="checkbox" name="enf_cardiovascular">
+            <div class = "content">
+              
+              <span>
+                Enf. cardiovascular:
+                <input type="checkbox" name="enf_cardiovascular">
+              </span>
+              &emsp;
               HTA:
               <input type="checkbox" name="hta">
-              Diabetes:
-              <input type="checkbox" name="diabetes">
+              <br>
+              
+              <span>
+                Diabetes:
+                <input type="checkbox" name="diabetes">
+              </span>
+              &emsp;
               Enf. cereb. vascular:
               <input type="checkbox" name="enf_cereb_vascular">
-              Dislipidemias:</label>
-              <input type="checkbox" name="dislipidemias"><br><br>
-            </span>
-            <h4>En:</h4>
-            <span>
-              Abuelos:
-              <input type="checkbox" name="abuelos" id="abuelos">
-              Padres:
-              <input type="checkbox" name="padres" id="padres">
-              Tíos:
-              <input type="checkbox" name="tios" id="tios">
-              Hermanos:
-              <input type="checkbox" name="hermanos" id="hermanos">
-              Otros:
-              <input type="checkbox" name="otros" id="otros"><br><br>
-            </span>
-            <h3>Personales:</h3> 
-            <span>
-              Enf. cardiovascular:
-              <input type="checkbox" name="enf_cardiovascular_personal">
-              Diabetes:
-              <input type="checkbox" name="diabetes_personal">
-              HTA:
-              <input type="checkbox" name="hta_personal">
-              Tabaquismo:
-              <input type="checkbox" name="tabaquismo">
-              Alcoholismo:
-              <input type="checkbox" name="alcoholismo">
-              Dislipidemias:
-              <input type="checkbox" name="dislipidemias_personal">
-              Post menopausia:
-              <input type="checkbox" name="post_menopausia">
-              Terapia de reemplazo hormonal:
-              <input type="checkbox" name="terapia_reemplazo_hormonal"><br><br>
-            </span>
+              <br>
+              
+              <span>
+                Dislipidemias:</label>
+                <input type="checkbox" name="dislipidemias">
+              </span>
+            </div>
+              <h4>En:</h4>
+              <div class = "content">
+                
+                <span>
+                  Abuelos:
+                  <input type="checkbox" name="abuelos" id="abuelos">
+                </span>
+                &emsp;
+                Padres:
+                <input type="checkbox" name="padres" id="padres">
+                <br>
+                
+                <span>
+                  Tíos:
+                  <input type="checkbox" name="tios" id="tios">
+                </span>
+                &emsp; &emsp;
+                Hermanos:
+                <input type="checkbox" name="hermanos" id="hermanos">         
+                <br>  
+                
+                <span>
+                  Otros:
+                  <input type="checkbox" name="otros" id="otros">
+                </span>   
+              </div>
+              <h3>Personales:</h3> 
+              <div class = "content">
+                
+                <span>
+                  Enf. cardiovascular:
+                  <input type="checkbox" name="enf_cardiovascular_personal">
+                </span>
+                &emsp;
+                Diabetes:
+                <input type="checkbox" name="diabetes_personal">
+                &emsp; &emsp; &nbsp;
+                HTA:
+                <input type="checkbox" name="hta_personal">
+                <br>
+                
+                <span>
+                  Tabaquismo:
+                  <input type="checkbox" name="tabaquismo">
+                </span>
+                &emsp; &emsp; &emsp; &nbsp;
+                Alcoholismo:
+                <input type="checkbox" name="alcoholismo">
+                &emsp;
+                Dislipidemias:
+                <input type="checkbox" name="dislipidemias_personal">
+                <br>
+                
+                <span>
+                  Post menopausia:
+                  <input type="checkbox" name="post_menopausia">
+                </span>
+                &emsp; &emsp;
+                Terapia de reemplazo hormonal:
+                <input type="checkbox" name="terapia_reemplazo_hormonal"><br><br>
+              </div>
           </fieldset>
-          
+          <!--Seccion de diagnostico-->
           <fieldset id="diagnostico">
             <legend> <h2>Datos del diagnostico</h2> </legend>
-            <span>
+            <div class = "content">
               Ingreso:
+              &ensp; &nbsp;
               <input type="checkbox" name="ingreso">
+              <br>
+              
               Reingreso:
-              <input type="checkbox" name="reingreso"><br><br>
+              <input type="checkbox" name="reingreso">
+              <br>
+              
               1. D.M.:
               <input type="text" name="dm" maxlength="6">
+              <br>
+              
               Tipo:
+              &emsp;
               <input type="text" name="dmT">
+              <br>
+              
               2. HTA:
               <input type="text" name="htaD" maxlength="6">
+              <br>
+              
               3. Obesidad:
-              <input type="text" name="obesidadD" maxlength="6"><br><br>
+              &emsp; &nbsp;
+              <input type="text" name="obesidadD" maxlength="6">
+              <br>
+              
               4. Dislipidemias:
               <input type="text" name="dislipidemiasD" maxlength="6">
+              <br>
+              
               5. Síndrome metabólico:
               <input type="text" name="sindromeMetabolico" maxlength="6">
+              <br>
+              
               6. Sobrepeso:
-              <input type="text" name="sobrepesoD" maxlength="6"><br><br>
-              Detección se le realizó por:<br>
+              <input type="text" name="sobrepesoD" maxlength="6">
+              <br>
+            </div>
+            <div class = "content">
+              Detección se le realizó por:
+              <br>
+              
               Pesquisa:
               <input type="checkbox" name="pesquisa">
+              <br>
+              
               Por sintomatología:
               <input type="checkbox" name="pSintomatologia">
+              <br>
+              
               Tratamiento previo:
               <select name="tratamiento">
                 <option value="si">Sí</option>
                 <option value="no">No</option>
               </select><br>
-            </span>
+            </div>
           </fieldset>
           <div class="boton">
             <button id="cancel" type="button" class="confirm">Cancelar</button>
@@ -257,113 +364,156 @@
           </div>
           
         </form>
+        
       </div>
 
+      <!--Pantalla de control-->
       <form class="control" id="control">
         <h1>Control</h1>
-        <fieldset >
-          <h3>Fecha</h3>
-          
-          <input type="date" name="fecha" value="2021-03-23" min="1900-01-01" max="2021-03-23"  >
-          <div class="imc">
+        <!--Lado izquierdo-->
+        
+        <fieldset>
+          <div class="content">
+            <label for="fecha"><h3>Fecha:</h3></label>
+            <div id="fecha"><input type="date" name="fecha" value="2021-03-23" min="1900-01-01" max="2021-03-23"></div>
+            <div class="imc">
             <span>
-              <label for="peso">Peso:</label>
+              <label for="peso">Peso:</label> 
+              &emsp; &emsp; &nbsp; &nbsp;
               <input type="number" id="peso"  name="peso" size="5" oninput="suma()"> 
               <label for="peso">kg</label>
             </span>
+            <br>
             <span>
-              <label for="estatura">Talla
-              </label> 
+              <label for="estatura">Talla:</label>
+              &emsp; &emsp; &nbsp; &nbsp;
               <input type="number" id="estatura" name="estatura" size="5" oninput="suma()">  
               <label for="estatura">mts</label> 
             </span>
+            <br>
             <span>
               <label for="imc">IMC:</label> 
+              &emsp; &emsp; &nbsp; &nbsp;
               <input type="number" id="imc" name="imc" readonly> 
             </span>
-
-            Trigliceridos:
-            <input type="text" name="hdl">
+            <br>
+            <span>
+              <label for="trigliceridos">Trigliceridos:</label>&nbsp;
+              <input type="text" name="hdl">
+            </span>
           </div>
-            
-          <span>   
-            <label for="glucemia">Glucemia:</label>
+          <span>
+            <label for="glucemia">Glucemia:</label>&emsp; &nbsp;
             <input type="text" name="glucemia">
+          </span>
+          <br>
+          <span>
             <label for="tension">HbA1c:</label> 
+            &emsp; &emsp;
             <input type="number" name="tension">   
             <label for="tension">%</label>
-
-            
           </span>
-          <label for="pies">Revision pies</label> 
-            <input type="checkbox" name="pies">   
+          <br>
           <span>
-            <label for="control">Paciente: </label> 
-            <select id="control" name="control">
-              <option value="controlado">Controlado</option>
-              <option value="nocontrolado">No controlado</option>
-            </select> 
+            <label for="pies">Revision pies</label>
+            <input type="checkbox" name="pies">
+          </span>
+          <span>
             <br>
-
-            <label for="gam">Grupo Ayuda Mutua</label>    
-            <input type="checkbox" name="gam">
-
-            <label for="complicaciones">Complicaciones</label>    
-            <input type="checkbox" name="complicaciones">
+            <span>
+              <label for="control">Paciente:</label> 
+              &emsp; &ensp;
+              <select id="control" name="control">
+                <option value="controlado">Controlado</option>
+                <option value="nocontrolado">No controlado</option>
+              </select>
+            </span> 
             <br>
+            <span>
+              <label for="gam">Grupo Ayuda Mutua</label>    
+              <input type="checkbox" name="gam">
+            </span>
+            <br>
+            <span>
+              <label for="complicaciones">Complicaciones</label>
+              &emsp; &nbsp;    
+              <input type="checkbox" name="complicaciones">
+            </span>
+            <br>
+            <span>
+              <label for="referencia">Referencia:</label>
+              &emsp;
+              <input type="text" name="referencia">  
+            </span>
+            <br>
+            <span>
+              <label for="baja">Baja:</label>
+              &emsp; &emsp; &emsp;
+              <input type="text" name="baja"> 
+            </span>
+          </span>
 
-            Referencia:
-            <input type="text" name="referencia">  
-            Baja:
-            <input type="text" name="baja"> 
-          </span> 
-          
-        </fieldset>
-
-        <fieldset >
-          <div id="colesterol">
-            <h3>Colesterol</h3>
-            <span>
-              <label for="hdl">HDL:</label> 
-              <input type="number" name="hdl" id="hdl" size="5" oninput="calcular()" >
-            </span>
-            <span>
-              <label for="ldl">LDL:</label> 
-              <input type="number" name="ldl" id="ldl"   size="5" oninput="calcular()">
-            </span>
-            <span>
-              <label for="total">Total:</label> 
-              <input type="number" name="total" id="total"  size="6" readonly>
-            </span>
-          </div>    
-          
-          <div id="tensionArt">
-            <h3>Tension Arterial</h3>
-                Sistólica:
-            <input type="text" name="tension">
-              Diastólica:
-            <input type="text" name="tension">
           </div>
+          <div class="content">
+            <div id="colesterol">
+              <h3>Colesterol</h3>
+              <span>
+                <label for="hdl">HDL:</label> 
+                &nbsp; 
+                <input type="number" name="hdl" id="hdl" size="5" oninput="calcular()" >
+              </span>
+              <br>
+              <span>
+                <label for="ldl">LDL:</label> 
+                &nbsp; 
+                <input type="number" name="ldl" id="ldl"   size="5" oninput="calcular()">
+              </span>
+              <br>
+              <span>
+                <label for="total">Total:</label> 
+                &nbsp; 
+                <input type="number" name="total" id="total"  size="6" readonly>
+              </span>
+            </div>    
+            <div id="tensionArt">
+              <h3>Tension Arterial</h3>
+              <span>
+                <label for="sistolica">Sistólica:</label>
+                &nbsp; 
+                <input type="text" name="tension">
+              </span>
+              <br>
+              <span>
+                <label for="diastolica">Diastólica:</label>
+                <input type="text" name="tension">
+              </span>
+            </div>
 
-          <div>
-            <h3>Tratamiento preescrito</h3>
-            No farmacologico:
-            <input type="text" name="farmacologico">
-            Farmacologico:
-            <input type="text" name="nofarmacologico">    
+            <div>
+              <h3>Tratamiento preescrito</h3>
+              <span>
+                No farmacologico:
+                <input type="text" name="farmacologico">
+              </span>
+              <br>
+              <span>
+                Farmacologico:
+                &emsp;
+                <input type="text" name="nofarmacologico"> 
+              </span>  
+            </div>
           </div>
-          
         </fieldset>
-        <fieldset>
+        <!--Lado derecho-->
+        <fieldset id="observaciones">
           <h3>Observaciones</h3>
-          <textarea name="notas" id="" cols="40" rows="13"></textarea>
+          <textarea name="notas" id="" cols="40" rows="20"></textarea>
         </fieldset>
         <div class="boton">
           <button class="confirm" type="button"  id="return">Cancelar</button>
           <button class="confirm" type="button" id="visiConfirm">Confirmar</button>
         </div>
-        
-      </form>  
+      </form>   
 
     </div>
 

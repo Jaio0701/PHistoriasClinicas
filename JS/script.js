@@ -124,13 +124,13 @@ var diagA = false;
 sigBtn.onclick = function() {
     if(antA){
         antP.style.display = "none";
-        diagP.style.display = "inline-block";
+        diagP.style.display = "flex";
         antA=false;
         diagA=true;        
     }
     else if(!diagA){
         idP.style.display = "none";
-        antP.style.display = "inline-block";
+        antP.style.display = "flex";
         antA=true;  
     }
 }
@@ -138,12 +138,12 @@ sigBtn.onclick = function() {
 canBtn.onclick = function() {
     if(antA){
         antP.style.display = "none";
-        idP.style.display = "inline-block";
+        idP.style.display = "flex";
         antA=false;       
     }
     else if(diagA){
         diagP.style.display = "none";
-        antP.style.display = "inline-block";
+        antP.style.display = "flex";
         diagA = false;
         antA=true;
     }
