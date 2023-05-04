@@ -15,12 +15,16 @@ header{
 span{
     margin-left: 20px;
 }
+section{
+    width: 100%;
+}
+
 
 fieldset{
     border: 1px solid black;
     background-color: whitesmoke;
     border-radius: 15px;
-    height: 400px;
+    height: 300px;
     
 }
 /*********************************/
@@ -28,11 +32,11 @@ fieldset{
 
 /*Formato de registro*/
 .registro{
-    width: 70%;
+    width: 100%;
 }
 
 .registro fieldset{
-    width: 100%;
+    width: 70%;
 }
 /************************/
 
@@ -105,7 +109,7 @@ h1, .boton{
 /***********************/
 
 #identificacion{
-    display: inline-block;
+    display: flex;
 }
 
 /*PANELES OCULTOS*/
@@ -120,6 +124,8 @@ h1, .boton{
 }
 .container .registro {
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
 /**********************/
 
@@ -222,7 +228,6 @@ footer{
 }
 
 label {
-	display: block;
 	margin-bottom: 5px;
 }
 
